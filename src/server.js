@@ -1,5 +1,11 @@
 import http from "node:http"
 
-function listener(request, response) {}
+import { jsonHandler } from "./middlewares/jsonHandler.js"
+
+async function listener(request, response) {
+  // Middleware do body da requisição.
+  await jsonHandler(request, response)
+  console.log(request.body)
+}
 
 http.createServer(listener).listen(3333)
