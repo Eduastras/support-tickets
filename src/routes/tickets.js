@@ -1,10 +1,11 @@
+import { create } from "../controllers/tickets/create.js"
+
 export const tickets = [
   {
     method: "POST",
-    // Caminho
+    // Caminho.
     path: "/tickets",
-    controller: (request, response) => {
-      response.end("Criado com sucesso!")
-    },
+    // Função que executa quando a rota for chamada.
+    controller: create,
   },
 ]
