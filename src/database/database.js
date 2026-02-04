@@ -36,6 +36,7 @@ export class Database {
     let data = this.#database[table] ?? []
 
     if (filters) {
+      // filtrando os objetos com base no status.
       data = data.filter((row) => {
         // Object.entries transforma um objeto em um array, dividindo entre propriedade e valor.
         return Object.entries(filters).some(([key, value]) => {
