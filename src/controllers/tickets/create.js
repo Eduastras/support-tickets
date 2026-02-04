@@ -1,7 +1,7 @@
 import { randomUUID } from "node:crypto"
 
 // Função do controller.
-export function create({ request, response }) {
+export function create({ request, response, database }) {
   const { equipment, description, user_name } = request.body
 
   // dados do ticket.
@@ -17,5 +17,7 @@ export function create({ request, response }) {
     updated_at: new Date(),
   }
 
-  return response.end(JSON.stringify(ticket))
+  database.insert("tickets", ticket)
+
+  return response.writeHead(201).end(JSON.stringify(ticket))
 }
