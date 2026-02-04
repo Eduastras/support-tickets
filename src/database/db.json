@@ -1,1 +1,22 @@
-{"tickets":[{"id":"e56ea30f-1fbb-42a8-98d1-90668e3a3ff4","equipment":"Computador","description":"Computador não liga","user_name":"Eduastra","status":"open","created_at":"2026-02-04T04:59:04.198Z","updated_at":"2026-02-04T04:59:04.198Z"},{"id":"74244588-cc47-49e1-911f-0303047b1aa6","equipment":"Monitor","description":"Monitor esta piscando","user_name":"Amanda","status":"open","created_at":"2026-02-04T05:16:46.623Z","updated_at":"2026-02-04T05:16:46.623Z"}]}
+{
+  "tickets": [
+    {
+      "id": "e56ea30f-1fbb-42a8-98d1-90668e3a3ff4",
+      "equipment": "Computador",
+      "description": "Computador não liga",
+      "user_name": "Eduastra",
+      "status": "closed",
+      "created_at": "2026-02-04T04:59:04.198Z",
+      "updated_at": "2026-02-04T04:59:04.198Z"
+    },
+    {
+      "id": "74244588-cc47-49e1-911f-0303047b1aa6",
+      "equipment": "Monitor",
+      "description": "Monitor esta piscando",
+      "user_name": "Amanda",
+      "status": "open",
+      "created_at": "2026-02-04T05:16:46.623Z",
+      "updated_at": "2026-02-04T05:16:46.623Z"
+    }
+  ]
+}

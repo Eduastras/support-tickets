@@ -32,8 +32,18 @@ export class Database {
     this.#persist()
   }
 
-  select(table) {
+  select(table, filters) {
     let data = this.#database[table] ?? []
+
+    if (filters) {
+      data = data.filter((row) => {
+        // Object.entries transforma um objeto em um array, dividindo entre propriedade e valor.
+        return Object.entries(filters).some(([key, value]) => {
+          return row[key].toLowerCase().includes(value.toLowerCase())
+        })
+      })
+    }
+
     return data
   }
 }
