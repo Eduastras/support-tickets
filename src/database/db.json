@@ -11,12 +11,12 @@
     },
     {
       "id": "74244588-cc47-49e1-911f-0303047b1aa6",
-      "equipment": "Monitor",
-      "description": "Monitor esta piscando",
+      "equipment": "Mouse",
+      "description": "O mouse não funciona",
       "user_name": "Amanda",
       "status": "open",
       "created_at": "2026-02-04T05:16:46.623Z",
-      "updated_at": "2026-02-04T05:16:46.623Z"
+      "updated_at": "2026-02-05T00:13:06.174Z"
     }
   ]
 }
